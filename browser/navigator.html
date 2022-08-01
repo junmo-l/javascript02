@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <script>
+        const ver = navigator.userAgent;
+        // console.log(ver);
+
+        const isIE = /trident/i.test(ver); // - /trident/i 는 JS의 정규표현식 사용
+
+        if (isIE) {
+            alert("IE를 누가씁미까.")
+        } else {
+            alert("당신은 트렌드 민감쟁이군요.")
+        }
+        //템플릿 문자를 인식하지 못함(``)
+
+
+    </script>
+    <title>document</title>
+</head>
+
+<body>
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <script>
+
+        function openPop() {
+            newWin = window.open("notice01.html", "pop", "width=555, height=825");
+            if (newWin == null) {
+                alert("팝업이 차단되어 있습니다. 팝업 차단을 해제해 주세요.");
+            }
+        }
+
+    </script>
+    <style>
+        div {
+            /* border: 2px double red; */
+            border-radius: 10px;
+            /* padding: 10px; */
+            overflow: hidden;
+        }
+
+        button {
+            position: absolute;
+            right: 30px;
+            bottom: 30px;
+            color: beige;
+            background-color: lightcoral;
+            border: none;
+            border-radius: 5px;
+            font-size: 30px;
+            cursor: pointer;
+        }
+    </style>
+    <title>document</title>
+</head>
+
+<body onload="openPop()">
+    <p>문서를 열면 팝업창이 나타납니다.</p>
+</body>
+
+</html>

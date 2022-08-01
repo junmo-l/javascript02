@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #container {
+            width: 550px;
+            margin: 10px auto;
+        }
+
+        #display {
+            margin-top: 15px;
+            padding: 10px;
+            border: solid 1px #333;
+        }
+
+        button {
+            margin-top: 10px;
+        }
+    </style>
+    <title>location</title>
+</head>
+
+<body>
+    <div id="container">
+        <h2>location</h2>
+        <div id="display">
+            <script>
+                document.write("<p><b>location.href : </b>" + location.href + "</p>");
+                document.write("<p><b>location.host : </b>" + location.host + "</p>");
+                document.write("<p><b>location.hostname : </b>" + location.hostname + "</p>");
+                document.write("<p><b>location.port : </b>" + location.port + "</p>");
+                document.write("<p><b>location.protocol : </b>" + location.protocol + "</p>");
+                document.write("<p><b>location.protocol : </b>" + navigator.userAgent + "</p>");
+                document.write("<p><b>location.protocol : </b>" + navigator.language + "</p>");
+            </script>
+        </div>
+        <button onclick="location.replace('http://google.com');">다음 홈페이지로 이동</button>
+    </div>
+</body>
+
+</html>

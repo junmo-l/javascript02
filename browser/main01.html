@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <script>
+        function openCenter(doc, win, w, h) {
+            var left = (screen.availWidth - w) / 2; // 팝업창의 왼쪽 좌표
+            var top = (screen.availHeight - h) / 2; // 팝업창의 오른쪽 좌표
+            var opt = "left=" + left + ", top=" + top + ", width=" + w + ", height=" + h;
+
+            window.open(doc, win, opt);
+        }
+        openCenter("notice01.html", "pop", 555, 738);
+
+        if (opt == null) {
+            alert("팝업치 차단되어 있습니다. 팝업을 해제해 주세요.");
+        }
+
+        // function openCenter(doc, win, w, h) {
+        //     var left = (window.outerWidth - w) / 2; // 팝업창의 왼쪽 좌표
+        //     var top = (window.outerHeight - h) / 2; // 팝업창의 오른쪽 좌표
+        //     var opt = "left=" + left + ", top=" + top + ", width=" + w + ", height=" + h;
+
+        //     window.open(doc, win, opt);
+        // }
+        // openCenter("notice01.html", "pop", 555, 738);
+    </script>
+    <title>document</title>
+</head>
+
+<body>
+    <p>문서를 열면 팝업창이 뜹니다.</p>
+</body>
+
+</html>
