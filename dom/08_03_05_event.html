@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="container">
+        <img src="images/img01.jpg" alt="아이유" id="iu">
+    </div>
+</body>
+<script>
+    let iu = document.querySelector('#iu');
+    iu.onclick = function (event) {
+        // alert("이벤트 유형 : " + event.type + "이벤트 발생 위치 : " + "X" + event.clientX + ", Y" + event.clientY)
+        alert("클릭한 이미지 파일 link : " + this.src);
+    }
+</script>
+
+</html>

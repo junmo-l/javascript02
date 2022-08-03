@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <script>
+        var num = 2.12357;
+
+        var roundNum = Math.round(num); // 반올림 2
+        var ceilNum = Math.ceil(num); // 올림 3
+        var floorNum = Math.floor(num); // 내림 2
+        var numPI = Math.PI;
+
+        document.write(`2.12357의 반올림은 : ${roundNum} <br>`);
+        document.write(`2.12357의 올림은 : ${ceilNum} <br>`);
+        document.write(`2.12357의 내림은 : ${floorNum}<br>`);
+        document.write(`PI : ${numPI} <br>`);
+
+        var minNum = Math.min(10, 8, 45, 9, 3); // 최솟값 3
+        var maxNum = Math.max(10, 8, 45, 9, 3); // 최댓값 45
+        var randomNum = Math.random(); // 0과 1 사이의 난수 발생
+        var nsNum = Math.floor(randomNum * 100 + 1); // 0 ~ 10 사이의 난수 발생
+        var absNum = Math.abs(num); 
+
+        document.write(`최솟값 : ${minNum}<br>`);
+        document.write(`최댓값 : ${maxNum}<br>`);
+        document.write(`난수 : ${randomNum}<br>`);
+        document.write(`자연수 랜덤값 : ${nsNum}<br>`);
+        document.write(`절대값 : ${absNum}<br>`);
+
+    </script>
+    <title>수학객체</title>
+</head>
+
+<body>
+
+</body>
+
+</html>

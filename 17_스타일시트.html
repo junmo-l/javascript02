@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <style>
+        .red {
+            color: red;
+            font-weight: bold;
+        }
+
+        .green {
+            color: green;
+            font-weight: bold;
+        }
+
+        .blue {
+            color: blue;
+            font-weight: bold;
+        }
+    </style>
+    <script>
+        for (var i = 1; i <= 100; i++) {
+            // ('1부터 100까지 5배수이면서 7배수가 아니면 실행')
+            if (i % 5 === 0 && i % 7 !== 0) {
+                document.write(`<p class="red"> 5배수이면서 7배수 ${i} </p>`);
+                // ('7배수이면서 5배수가 아니면 실행')
+            } else if (i % 7 === 0 && i % 5 !== 0) {
+                document.write(`<p class="green"> 7배수이면서 5배수 ${i} </p>`);
+                // ('7배수이면서 5배수이면 아니면 실행')
+            } else if (i % 5 === 0 && i % 7 === 0) {
+                document.write(`<p class="blue"> 7배수이면서 5배수 ${i} </p>`);
+            }
+        }
+    </script>
+    <title>스타일시트 적용</title>
+</head>
+
+<body>
+
+</body>
+
+</html>

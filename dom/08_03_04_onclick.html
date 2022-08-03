@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>이미지 속성 알아보기</title>
+</head>
+
+<body>
+    <div id="container">
+        <img src="images/cup-1.png" alt="빨간잔" id="cup">
+    </div>
+    <script>
+        let cup = document.querySelector("#cup");
+        // cup.onclick = function () {
+        //     alert("이미지를 클릭했습니다.");
+        // }
+
+        // cup.onclick = changePic; // cup 클릭 시 changePic함수 실행
+        // function changePic () {
+        //     cup.src = "images/cup-2.png";
+        // }
+
+        cup.onclick = function () {
+            cup.src = "images/cup-2.png";
+        }
+    </script>
+</body>
+
+</html>

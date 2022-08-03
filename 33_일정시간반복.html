@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <script>
+        let addNum = 0;
+        let subNum = 100;
+        let ssubNum = 0;
+
+        let auto_3 = setTimeout(
+            function () {
+                console.log(`1초 후에 실행됩니다.`);
+            }, 0
+        );
+
+        let auto_1 = setInterval(
+            function () {
+                addNum++;
+                console.log(`1초마다 실행됩니다. : ${addNum}번 째`);
+            }, 1000
+        );
+
+        // let auto_2 = setInterval(
+        //     function () {
+        //         subNum--;
+        //         console.log(`-- : ${subNum}번 째`);
+        //     }, 500
+        // );
+
+
+    </script>
+    <title>일정시간반복</title>
+</head>
+
+<body>
+    <button onClick="clearInterval(auto_1);">++ STOP!</button>
+    <button onClick="clearTimeout(auto_2);">-- STOP!</button>
+</body>
+
+</html>

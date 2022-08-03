@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <script>
+        var today = new Date();
+        var nowMonth = today.getMonth() + 1; // 현재 월에서 -1로 출력된다.
+        var nowDate = today.getDate();
+        var nowDay = today.getDay();
+        var nowHours = today.getHours();
+        var nowMinutes = today.getMinutes();
+        var nowSeconds = today.getSeconds();
+
+        document.write(`<h3>오늘 날짜 정보</h3>`);
+        document.write(`월 : ${nowMonth} <br>`)
+        document.write(`일 : ${nowDate} <br>`)
+        document.write(`요일 : ${nowDay} <br>`)
+        document.write(`시 : ${nowHours} <br>`)
+        document.write(`분 : ${nowMinutes} <br>`)
+        document.write(`초 : ${nowSeconds} <br>`)
+
+
+        var worldcup = new Date(2022, 10, 21);
+        var theYear = worldcup.getFullYear();
+        var theMonth = worldcup.getMonth() + 1;
+        var theDate = worldcup.getDate();
+        var theDay = worldcup.getDay();
+
+        document.write(`<h3>월드컵 날짜 정보</h3>`);
+        document.write(`다음 월드컵은 몇 년? : ${theYear} <br>`)
+        document.write(`다음 월드컵은 몇 월? : ${theMonth} <br>`)
+        document.write(`다음 월드컵은 몇 일? : ${theDate} <br>`)
+        document.write(`다음 월드컵은 몇 요일? : ${theDay} <br>`)
+
+    </script>
+    <title>날짜객체</title>
+</head>
+
+<body>
+
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>innerText, innerHTML</title>
+</head>
+
+<body>
+    <button onclick="inText()">innerText로 표시</button>
+    <button onclick="inHtml()">innerHTML로 표시</button>
+    <div id="current"></div>
+
+    <script>
+        const now = new Date();
+
+        function inText() {
+            document.getElementById('current').innerText = now;
+        }
+        function inHtml() {
+            document.getElementById('current').innerHTML = "<em>" + now + "</em>";
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <style>
+        h2 {
+            border: 2px solid rebeccapurple;
+            background-color: antiquewhite;
+            color: lightcoral;
+        }
+    </style>
+
+
+    <title>당첨자 예제</title>
+</head>
+
+<body>
+    <h2>당첨자 예제</h2>
+    <script>
+        var num = prompt("전체 응모자 수");
+        var randomNum = Math.ceil(Math.random() * num);
+
+        document.write(`전체 응모자 수 : ${num}명 <br>`)
+        document.write(`당첨자 : ${randomNum}번`)
+    </script>
+</body>
+
+</html>

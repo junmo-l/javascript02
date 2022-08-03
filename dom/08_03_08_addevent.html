@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <img src="images/img01.jpg" alt="아이유" id="cover" width="600" height="800">
+    </div>
+    <script>
+        let cover = document.querySelector("#cover");
+        cover.addEventListener("mouseover", changeImg, false);
+        cover.addEventListener("mouseout", originImg);
+
+        function changeImg() {
+            this.src = "images/img02.jpg";
+        }
+        function originImg() {
+            this.src = "images/img01.jpg";
+        }
+    </script>
+</body>
+
+</html>

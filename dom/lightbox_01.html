@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <title>라이트박스</title>
+  <link rel="stylesheet" href="css/lightbox01.css">
+</head>
+
+<body>
+  <div class="row">
+    <ul>
+      <li><img src="images/tree-1-thumb.jpg" data-src="images/tree-1.jpg" class="pic1"></li>
+      <li><img src="images/tree-2-thumb.jpg" data-src="images/tree-2.jpg" class="pic2"></li>
+      <li><img src="images/tree-3-thumb.jpg" data-src="images/tree-3.jpg" class="pic3"></li>
+      <li><img src="images/tree-4-thumb.jpg" data-src="images/tree-4.jpg" class="pic4"></li>
+      <li><img src="images/tree-5-thumb.jpg" data-src="images/tree-5.jpg" class="pic5"></li>
+      <li><img src="images/tree-6-thumb.jpg" data-src="images/tree-6.jpg" class="pic6"></li>
+    </ul>
+  </div>
+
+  <div id="lightbox">
+    <img src="" id='lightboxImage'>
+  </div>
+
+  <script>
+    let cover1 = document.querySelector(".pic1");
+    cover1.addEventListener("mouseover", seeImg1);
+    cover1.addEventListener("mouseout", hideImg1);
+    const div1 = document.getElementById('lightboxImage');
+
+    function seeImg1() {
+      div1.src = "images/tree-1.jpg";
+    }
+    function hideImg1() {
+      div1.src = "";
+    }
+
+    let cover2 = document.querySelector(".pic2");
+    cover2.addEventListener("mouseover", seeImg2);
+    cover2.addEventListener("mouseout", hideImg2);
+    const div2 = document.querySelector("#lightboxImage")
+
+    function seeImg2() {
+      div2.src = "images/tree-2.jpg";
+    }
+    function hideImg2() {
+      div2.src = "";
+    }
+
+    let cover3 = document.querySelector(".pic3");
+    cover3.addEventListener("mouseover", seeImg3);
+    cover3.addEventListener("mouseout", hideImg3);
+
+    const div3 = document.querySelector("#lightboxImage")
+
+    function seeImg3() {
+      div3.src = "images/tree-3.jpg";
+    }
+    function hideImg3() {
+      div3.src = "";
+    }
+    let cover4 = document.querySelector(".pic4");
+    cover4.addEventListener("mouseover", seeImg4, false);
+    cover4.addEventListener("mouseout", hideImg4);
+
+    const div4 = document.querySelector("#lightboxImage")
+
+    function seeImg4() {
+      div4.src = "images/tree-4.jpg";
+    }
+    function hideImg4() {
+      div4.src = "";
+    }
+    let cover5 = document.querySelector(".pic5");
+    cover5.addEventListener("mouseover", seeImg5);
+    cover5.addEventListener("mouseout", hideImg5);
+
+    const div5 = document.querySelector("#lightboxImage")
+
+    function seeImg5() {
+      div5.src = "images/tree-5.jpg";
+    }
+    function hideImg5() {
+      div.src5 = "";
+    }
+    let cover6 = document.querySelector(".pic6");
+    cover6.addEventListener("mouseover", seeImg6);
+    cover6.addEventListener("mouseout", hideImg6);
+
+    const div6 = document.querySelector("#lightboxImage")
+
+    function seeImg6() {
+      div6.src = "images/tree-6.jpg";
+    }
+    function hideImg6() {
+      div.src6 = "";
+    }
+
+  </script>
+</body>
+
+</html>

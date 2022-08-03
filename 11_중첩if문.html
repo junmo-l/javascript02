@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <script>
+        var id = "abc";
+        var pw = "1234";
+
+        // 사용자 입력하는 변수
+        var user_id = prompt("아이디는?", "");
+        var user_pw = prompt("비밀번호는?", "");
+
+        // 0, null, ""(빈문자), undeifined 는 false
+        if (id == user_id) {
+            if (pw == user_pw) {
+                document.write(user_id + "님 환영합니다.");
+            } else {
+                alert("비밀번호가 다릅니다.");
+                location.reload(); //F5키와 같이 새로고침
+            }
+        } else {
+            alert("아이디가 다릅니다.");
+            location.reload();
+        }
+
+    </script>
+    <title>중첩if</title>
+</head>
+
+<body>
+
+</body>
+
+</html>

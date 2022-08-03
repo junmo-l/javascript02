@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <script>
+        var tv = new Object();
+        tv.color = "red";
+        tv.price = 300000;
+        tv.info = function () {
+            document.write(`TV 색상 ${this.color} <br> `);
+            document.write(`TV 가격 ${this.price} <br> `);
+        }
+        document.write(`<h3>TV 객체 메서드 호출 </h3>`)
+        tv.info();
+
+        var car = new Object(); // 변수 car에 새로운 오브젝트를 만든다
+        car.color = "Yello"; // 변수 car에 color속성을 넣는다.
+        car.price = 100; // 변수 car에 color속성을 넣는다.
+        car.info = function () { // 속성을 호출하는 info 메서드를 만든다
+            document.write(`차 색상 ${this.color} <br>`)
+            document.write(`차 가격 ${this.price} <br>`)
+        }
+        document.write(`<h3>차 객체 메서드 호출 </h3>`)
+        car.info(); // info 메서드(기능)를 이용해서 속성을 호출한다.
+
+        var car = {
+            color: "Yello",
+            price: 1000,
+            info: function () {
+                document.write(`차 색상 ${this.color} <br>`)
+                document.write(`차 가격 ${this.price} <br>`)
+            }
+        }
+        document.write(`<h3>차 객체 메서드 호출 </h3>`)
+        car.info();
+
+
+
+    </script>
+    <title>내장객체생성</title>
+</head>
+
+<body>
+
+</body>
+
+</html>

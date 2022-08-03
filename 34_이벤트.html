@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <style>
+        #wrap {
+            width: 500px;
+            height: 500px;
+            background: tomato;
+        }
+    </style>
+
+    <title>이벤트</title>
+</head>
+
+<body>
+    <button onClick="myFnc()">Try it</button>
+    <div id="wrap">
+        <h1>hello</h1>
+    </div>
+
+    <script>
+        function myFnc() {
+            document.getElementById("wrap").style.backgroundColor = "blue";
+
+        }
+    </script>
+</body>
+
+</html>
