@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <title>라이트박스</title>
+  <link rel="stylesheet" href="css/lightbox01.css">
+</head>
+
+<body>
+  <div class="row">
+    <ul>
+      <li><img src="images/tree-1-thumb.jpg" data-src="images/tree-1.jpg" class="pic1"></li>
+      <li><img src="images/tree-2-thumb.jpg" data-src="images/tree-2.jpg" class="pic2"></li>
+      <li><img src="images/tree-3-thumb.jpg" data-src="images/tree-3.jpg" class="pic3"></li>
+      <li><img src="images/tree-4-thumb.jpg" data-src="images/tree-4.jpg" class="pic4"></li>
+      <li><img src="images/tree-5-thumb.jpg" data-src="images/tree-5.jpg" class="pic5"></li>
+      <li><img src="images/tree-6-thumb.jpg" data-src="images/tree-6.jpg" class="pic6"></li>
+    </ul>
+  </div>
+
+  <div id="lightbox">
+    <img src="" id='lightboxImage'>
+  </div>
+
+  <script>
+    const div1 = document.getElementById('lightboxImage');
+    const div2 = document.querySelectorAll('li');
+
+    div2[0].addEventListener("mouseover", function () {
+      seeImg("images/tree-1.jpg");
+    });
+    div2[0].addEventListener("mouseout", hideImg);
+
+    div2[1].addEventListener("mouseover", function () {
+      seeImg("images/tree-2.jpg");
+    });
+    div2[1].addEventListener("mouseout", hideImg);
+
+    div2[2].addEventListener("mouseover", function () {
+      seeImg("images/tree-3.jpg");
+    });
+    div2[2].addEventListener("mouseout", hideImg);
+
+    div2[3].addEventListener("mouseover", function () {
+      seeImg("images/tree-4.jpg");
+    });
+    div2[3].addEventListener("mouseout", hideImg);
+
+    div2[4].addEventListener("mouseover", function () {
+      seeImg("images/tree-5.jpg");
+    });
+    div2[4].addEventListener("mouseout", hideImg);
+
+    div2[5].addEventListener("mouseover", function () {
+      seeImg("images/tree-6.jpg");
+    });
+    div2[5].addEventListener("mouseout", hideImg);
+
+    function seeImg(toss) {
+      div1.src = toss;
+    }
+    function hideImg() {
+      div1.src = "";
+    }
+
+
+  </script>
+</body>
+
+</html>

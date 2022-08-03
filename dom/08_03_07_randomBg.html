@@ -14,12 +14,13 @@
     <script>
 
         // const bg = document.getElementsByTagName("button");
-        let color = ["blue", "yellow", "aqua", "purple", "green"];
-        let chColor = Math.floor(Math.random() * color.length);
+        const color = ["tomato", "coral", "lightblue", "pink", "beige"];
+        // let chColor = Math.floor(Math.random() * color.length);
         // function changeBg() {
         //     document.body.style.backgroundColor = "red";
         // }
         function changeBg() {
+            let chColor = Math.floor(Math.random() * color.length);
             document.body.style.backgroundColor = color[chColor];
         }
 
