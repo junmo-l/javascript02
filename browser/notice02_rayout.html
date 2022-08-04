@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: gray;
+        }
+
+        #notice {
+            border: 2px double red;
+            border-radius: 10px;
+            padding: 10px;
+            width: 200px;
+            position: absolute;
+            top: 100px;
+            left: 100px;
+            background-color: white;
+            display: block;
+        }
+
+        ul {
+            margin-left: 15px;
+            list-style: none;
+        }
+
+        button {
+            position: absolute;
+            right: 20px;
+            bottom: 10px;
+            display: block;
+        }
+    </style>
+    <title>공지사항</title>
+</head>
+
+<body>
+    <p>문서를 열면 팝업 창이 표시됩니다.</p>
+    <div class="popup" id="notice">
+        <h1>공지사항</h1>
+        <ul>
+            <li>항목1</li>
+            <li>항목2</li>
+            <li>항목3</li>
+            <li>항목4</li>
+            <li>항목5</li>
+        </ul>
+        <button id="button" onclick="btn()">닫기</button>
+    </div>
+
+</body>
+<script>
+    function btn() {
+        document.getElementById('notice').style.display = 'none';
+        document.getElementById('button').style.display = 'none';
+        document.querySelector('body').style.backgroundColor = 'white';
+    }
+
+</script>
+
+</html>

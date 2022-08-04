@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="event.css">
+    <script>
+        function showDetail() {
+            document.querySelector('#desc').style.display = 'block';
+            document.querySelector('#open').style.display = 'none';
+        }
+
+        function hideDetail() {
+            document.querySelector('#desc').style.display = 'none';
+            document.querySelector('#open').style.display = 'block';
+        }
+    </script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="item">
+        <img src="img02.jpg">
+        <button class="over" id="open" onclick="showDetail()">상세 설명 보기</button>
+        <div id="desc" class="detail">
+            <h2>IDLE</h2>
+            <p>미연(본명: 조미연, 曺薇娟, 1997년 1월 31일 ~ )은 대한민국의 가수이자 배우로 2018년 5월 2일 데뷔한 걸그룹 (여자)아이들의 비주얼과 메인보컬을 담당하고 있으며, 라이엇
+                게임즈의 게임 리그 오브 레전드에서의 가상의 걸그룹 K/DA의 아리 담당 가수로도 유명하다. 2022년 4월 27일에 첫 솔로 앨범 《MY》를 발매하고, 솔로 데뷔하였다.[1]</p>
+            <button id="close" onclick="hideDetail()">상세 설명 닫기</button>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

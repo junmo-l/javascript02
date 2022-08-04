@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: seashell;
+        }
+
+        p {
+            width: 500px;
+            text-align: justify;
+        }
+    </style>
+    <title>글자 크기 확대 축소</title>
+</head>
+
+<body>
+    <button onclick="zoomIn();">글자확대</button>
+    <button onclick="zoomOut();">글자축소</button>
+    <button onclick="colorCh();">색상변경</button>
+    <button onclick="colorRe();">색상되돌리기</button>
+    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at
+        its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as
+        opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing
+        packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum'
+        will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by
+        accident, sometimes on purpose (injected humour and the like).</p>
+    <script>
+        const color = ["tomato", "coral", "lightblue", "pink", "beige"];
+        let num1 = 16;
+        function zoomIn() {
+            num1++;
+            let body = document.querySelector('body');
+            body.style.fontSize = num1 + 'px'
+            console.log(num1);
+        }
+        function zoomOut() {
+            if (num1 > 1) {
+                num1--;
+                let body = document.querySelector('body');
+                body.style.fontSize = num1 + 'px'
+            }
+        }
+
+        function colorCh() {
+            let chColor = Math.floor(Math.random() * color.length);
+            document.querySelector('body').style.color = color[chColor];
+        }
+        function colorRe() {
+            let colorCh = document.querySelector('body');
+            colorCh.style.color = '';
+        }
+    </script>
+</body>
+
+</html>
