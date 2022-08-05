@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <style>
+    #container {
+      width: 500px;
+      margin: 10px auto;
+      padding: 20px;
+    }
+
+    #info {
+      margin-top: 20px;
+    }
+  </style>
+  <title>DOM</title>
+</head>
+
+<body>
+  <!-- <h1 style="border: ;">sad</h1> -->
+  <script>
+    let text = document.createElement('h1');
+
+    text.textContent = '문서 객체 동적으로 생성하기';
+    text.style.backgroundColor = 'black';
+    text.style.color = 'white';
+    text.style.padding = '10px';
+
+
+    document.querySelector('body').appendChild(text);
+
+
+
+  </script>
+</body>
+
+</html>
