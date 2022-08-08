@@ -1,6 +1,5 @@
 let imgCh = document.querySelector("#cup");
 let imgList = document.querySelectorAll(".small");
-let openInfo = document.querySelector("#info");
 let btn = document.querySelector("#view");
 
 let newDiv = document.createElement("div");

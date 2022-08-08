@@ -1,0 +1,46 @@
+<html>
+
+<head>
+
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css"> -->
+    <link rel="stylesheet" href="./css/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.slider').bxSlider({
+                auto: true, // 슬라이드 자동 실행여부
+                mode: 'horizontal', // 슬라이드 방향설정 기본값-horizontal, vertical, fade
+                speed: 1,
+                randomStart: true,
+                autoHover: true,
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div class="title1"></div>
+    <div class="title2"></div>
+    <div class="title3"></div>
+    <div class="title4"></div>
+    <!-- <h1>This is Slide Show</h1> -->
+    <div id="wrap">
+        <div>
+            <ul class="slider">
+                <li><img src="img/photo1.jpeg" alt="풍경1"></li>
+                <li><img src="img/photo2.jpeg" alt="풍경2"></li>
+                <li><img src="img/photo3.jpeg" alt="풍경3"></li>
+                <li><img src="img/photo4.jpeg" alt="풍경4"></li>
+                <li><img src="img/photo5.jpeg" alt="풍경5"></li>
+                <li><img src="img/photo6.jpeg" alt="풍경6"></li>
+            </ul>
+            <!-- <div>I am a slide.</div>
+            <div>I am another slide.</div> -->
+        </div>
+    </div>
+
+</body>
+
+</html>
