@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<title> 이벤트 </title>
+	<script src="js.js"></script>
+	<script>
+		$(function () {
+			$('.menuWrap_1 li a').on({
+				'click': function (i) {
+					i.preventDefault();
+					$('.menuWrap_1 li a').css('background-color', '');
+					$(this).css('background-color', 'yellow');
+				}
+			})
+
+			$('.menuWrap_2 li a').on({
+				'click': function (i) {
+					i.preventDefault();
+					$('.menuWrap_2 li a').css('background-color', '');
+					$(this).css('background-color', 'yellow');
+					$('.idxNum').text($('.menuWrap_2 li a').index(this));
+				}
+			})
+		});
+	</script>
+</head>
+
+<body>
+	<h2>$(this)</h2>
+	<ul class="menuWrap_1">
+		<li><a href="#">메뉴1</a></li>
+		<li><a href="#">메뉴2</a></li>
+		<li><a href="#">메뉴3</a></li>
+	</ul>
+	<h2>Index( )</h2>
+	<ul class="menuWrap_2">
+		<li><a href="#">메뉴4</a></li>
+		<li><a href="#">메뉴5</a></li>
+		<li><a href="#">메뉴6</a></li>
+		<li><a href="#">메뉴6</a></li>
+		<li><a href="#">메뉴6</a></li>
+	</ul>
+	<p class="idxNum"></p>
+</body>
+
+</html>
