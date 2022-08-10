@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+/*구조화*/
+
+#wrap {
+  width: 100%;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  padding: 0 30px;
+  border-bottom: 1px solid #e1e1e1;
+  display: flex;
+  justify-content: space-between; /*item들의 균일한 간격처리*/
+  box-sizing: border-box;
+}
+
+header h1 {
+  padding: 20px 0;
+}
+
+header > #gnb {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  position: absolute;
+  top: 30px;
+  /*item들의 사이와 양끝에 균일한 간격처리*/
+}
+
+/*
+::before, ::after
+::before = 선택한 요소 앞에 가상 컨텐츠 삽입
+::after = 선택한 요소 뒤에 가상 컨텐츠 삽입
+예시) 
+h1.st::before {
+    content:"String"; // 가상 컨텐츠 문자열삽입
+    content: url("이미지 경로"); //가상 컨텐츠 이미지
+    content: attr(class) // 가상 컨텐츠 속성값 삽입
+    content: ""; 가상 컨텐츠 빈공간을 만듦
+}*/
+
+header > #gnb::before {
+  content: "";
+  width: 96%;
+  position: absolute;
+  top: 55px;
+  left: 0;
+  height: 180px;
+  background: #fff;
+  border-bottom: solid 1px #e1e1e1;
+  box-shadow: 0 10px 10px 0px rgba(48, 49, 51, 6);
+  display: block;
+  box-sizing: border-box;
+}
+
+header > #gnb::before {
+  display: none;
+}
+header > #gnb.on::before {
+  display: block;
+}
+header > #gnb > li > .snb {
+  position: absolute;
+  top: 70px;
+  display: none;
+}
+
+header > #gnb.on > li > .snb {
+  display: block;
+}
+header > #gnb > li > .snb > ul > li + li {
+  margin-top: 20px;
+}

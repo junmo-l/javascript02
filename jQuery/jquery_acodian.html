@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js.js"></script>
+    <style>
+        ul {
+            display: none;
+        }
+    </style>
+    <script>
+        $(function () {
+            // $('ul ul').hide();
+            // let ts = $(this);
+            // if (ts.hide()) {
+            //     $('#a1').on('click', function () {
+            //         $('ul ul:first').slideDown(300);
+            //         $('ul ul:first').show();
+            //     });
+            // } else {
+            //     $('#a1').on('click', function () {
+            //         $('ul ul:first').slideUp(300);
+            //         $('ul ul:first').hide();
+            //     });
+            // }
+
+            $('#a1 a').on('click', function () {
+                $('#a1').next('ul').filter(":visible").slideUp();
+
+                $(this).parent().next().slideDown();
+                return false;
+            });
+        });
+    </script>
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- <ul>
+        <li>
+            <a href="#" id="a1">이벤트대상1</a>
+            <ul>
+                <li><a href="#">리스트1</a></li>
+                <li><a href="#">리스트2</a></li>
+                <li><a href="#">리스트3</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#" id="a1">이벤트대상2</a>
+            <ul>
+                <li><a href="#">리스트1</a></li>
+                <li><a href="#">리스트2</a></li>
+                <li><a href="#">리스트3</a></li>
+            </ul>
+        </li>
+    </ul> -->
+
+    <p id="a1"><a href="#"> 이벤트대상1</a></p>
+    <ul>
+        <li><a href="#">리스트1</a></li>
+        <li><a href="#">리스트2</a></li>
+        <li><a href="#">리스트3</a></li>
+    </ul>
+    <p id="a1"><a href="#">이벤트대상2</a></p>
+    <ul>
+        <li><a href="#">리스트1</a></li>
+        <li><a href="#">리스트2</a></li>
+        <li><a href="#">리스트3</a></li>
+    </ul>
+    </div>
+</body>
+
+</html>

@@ -14,8 +14,8 @@
 			function go() {
 				if (count < 10) {
 					count++;
-					txt1.animate({ marginLeft: '+=60px' }, 1000)
-					// txt1.clearQueue();
+					txt1.animate({ marginLeft: '+=60px' }, 0)
+					txt1.clearQueue();
 				}
 			};
 
@@ -23,8 +23,8 @@
 			function back() {
 				if (count > 1) {
 					count--;
-					$($(txt1)).animate({ marginLeft: '-=60px' }, 1000)
-					// txt1.clearQueue();
+					txt1.animate({ marginLeft: '-=60px' }, 0)
+					txt1.clearQueue();
 				}
 			};
 		});
